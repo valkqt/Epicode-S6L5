@@ -1,0 +1,17 @@
+$primary: #141414;
+$secondary: #FFFFFF;
+$light: #7E7E7E;
+$navbar-active-color: white;
+
+@mixin navImgResizer {
+    width: auto;
+    height: 3rem;
+  
+}
+
+@mixin navOrderLG($order) {
+    @media (max-width: 992px) {  
+        order: $order
+      }
+    
+}

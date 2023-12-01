@@ -1,0 +1,62 @@
+@import "abstract.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "nav.scss";
+@import "main.scss";
+@import "footer.scss";
+
+
+body {
+  background-color: $primary
+}
+
+section {
+  margin: 2rem 0;
+
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.slider-item-container {
+  display: flex;
+  position:relative;
+  gap: 1rem;
+
+}
+
+.slider span {
+  color:white;
+  position: absolute;
+  z-index: 5;
+  font-size: 3rem;
+  top: calc(30%);
+  width: 3rem;
+  border: 1px solid $light;
+  background-color: $primary;
+  &:hover {
+    background-color: gray;
+  }
+}
+
+.arrow-container {
+  &:hover {
+    cursor:pointer;
+  }
+  }
+
+.carousel-right {
+  right: 0;
+}
+
+.carousel-right {
+  right: 0%;
+}
+
+
+@keyframes sliding {
+  from {}
+  to {}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="valkqt" />
+    <meta
+      name="description"
+      content="Netflix - your favourite movies and tv series in streaming at home"
+    />
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="styles/core.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles/profile.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="Netflix-assets/assets/netflix_logo.png"
+        alt="netflix logo"
+        id="netflix-logo"
+      />
+    </header>
+    <main>
+      <div>
+        <h1>Edit Profile</h1>
+        <hr style="border-color: white" />
+      </div>
+      <form onsubmit="alert('weeee')">
+        <div class="wrapper">
+          <div class="image-wrapper">
+            <img src="Netflix-assets/assets/avatar.png" alt="your avatar" />
+          </div>
+          <div class="info">
+            
+            <fieldset>
+              <legend>Epicode Student</legend>
+              <label for="language">Language</label>
+              <select name="language" id="language">
+                <option value="English" selected>English</option>
+                <option value="Italiano">Italiano</option>
+                <option value="日本語">日本語</option>
+              </select>
+            </fieldset>
+            <hr />
+            <fieldset>
+              <legend>Maturity Settings</legend>
+              <select name="maturity" id="maturity">
+                <option value="G">G (Little Kids)</option>
+                <option value="PG">PG (Older Kids)</option>
+                <option value="PG-13">PG-13 (Teens)</option>
+                <option value="16+">16+ (Adults)</option>
+                <option value="R" selected>18+ (Adults)</option>
+              </select>
+            </fieldset>
+            <p id="showMaturity">Show titles of all maturity ratings for this profile</p>
+            <hr />
+            <fieldset>
+              <legend>Autoplay controls</legend>
+
+              <div class="autoplay-input-box">
+                  <input type="checkbox" name="nextEpisode" id="nextEpisode" />
+                <label for="nextEpisode"
+                  >Autoplay next episode in a series on all devices.</label
+                >
+              </div>
+              <div class="autoplay-input-box">
+                  <input type="checkbox" name="previews" id="previews" />
+                <label for="previews">
+                  Autoplay previews while browsing on all devices.</label
+                >
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <hr />
+
+        <div class="submit-buttons">
+          <input type="submit" value="Save" />
+          <input type="submit" value="Cancel" />
+          <input type="submit" value="Delete Profile" />
+        </div>
+      </form>
+    </main>
+    <script src="scripts/profile.js"></script>
+  </body>
+</html>

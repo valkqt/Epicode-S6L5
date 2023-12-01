@@ -1,0 +1,41 @@
+footer {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: $light;
+  
+    #footer-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 0;
+      div > a {
+        display: block;
+        padding: 0.33rem 0 ;
+      }
+  
+    }
+  
+    .btn {
+      border-color: $light;
+      color: $light;
+      border-radius: 0%;
+      margin: 1rem 0;
+      align-self: flex-start;
+  
+    }
+  }
+  
+  #socials {
+    display:flex;
+    gap: 1.51rem;
+    i {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  address {
+    font-size: 0.83333rem;
+  }

@@ -1,0 +1,64 @@
+nav {
+    background-color: $primary;
+    color:white;
+    a {
+      color: white;
+    }
+}
+
+header i {
+    color: $secondary;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+  color: $secondary;
+}
+
+.selected-link {
+  font-weight: bold;
+}
+
+.nav-link.active, .nav-link.dropdown-toggle {
+  color: $secondary !important;
+}
+
+#netflix-logo {
+    @include navImgResizer;
+  }
+  
+
+.navbar-brand {
+  @include navOrderLG(0)
+}
+
+#navbar-collapsed-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  @include navOrderLG(1)
+}
+
+#navbarSupportedContent {
+  @include navOrderLG(2)
+}
+
+.nav-item-dropdown {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.dropdown-menu {
+  transform: translateX(-35%);
+  }
+
+#avatar {
+  @include navImgResizer;
+}
+
+header a{
+  text-decoration: none;
+}

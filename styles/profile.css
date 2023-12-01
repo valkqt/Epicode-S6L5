@@ -1,0 +1,119 @@
+body {
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.image-wrapper {
+  flex-basis: 15%;
+}
+img {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin: 0.66rem 0;
+  color: #acacac;
+}
+
+.info {
+  flex-basis: 80%;
+  flex-grow: 1;
+}
+
+legend {
+  background-color: grey;
+  padding: 0.33rem;
+  font-size: 1.1rem;
+}
+
+#showMaturity {
+    margin: 1rem 0;
+}
+
+.submit-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+[type="checkbox"] {
+  transform: scale(1.5);
+  accent-color: #141414;
+  background-color: red;
+  outline: 1px solid rgb(104, 104, 104);
+}
+
+.autoplay-input-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.66rem 0;
+}
+
+
+[type="submit"] {
+  padding: 0.33rem 1.5rem;
+  background-color: #141414;
+  flex-grow: 1;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+}
+
+[type="submit"]:first-of-type {
+  background-color: white;
+  color: #141414;
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .submit-buttons {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 976px) {
+  main {
+    width: 55%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main {
+    width: 33%;
+    margin: 0 auto;
+  }
+}
