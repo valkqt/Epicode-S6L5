@@ -6,6 +6,8 @@
 let position = 0;
 let sliding = 0
 
+
+
 function pepe() {
   const sliders = document.querySelectorAll(".slider");
 
@@ -19,6 +21,7 @@ function pepe() {
 
         if (position != 0) {
             sliding -= 50
+            console.log(sliding)
     
             slider.style = `transform: translateX(-${sliding}%)`;
             position--
@@ -33,9 +36,11 @@ function pepe() {
 
 
 
+
         if (position != 4) {
             sliding += 50
             slider.style = `transform: translateX(-${sliding}%)`;
+
     
             position++
         } else {
